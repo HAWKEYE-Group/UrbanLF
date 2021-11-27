@@ -50,7 +50,9 @@ UrbanLF-Real consists of 580 training, 80 validation and 164 test samples and th
 
 #### Data Link
 
-Data is publicly available in Baiduyun (code: xjur) and Google.
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7IHu98PfQ) (key: 6ew2) and Google.
+
+
 
 
 
@@ -64,11 +66,15 @@ Our benchmark provides ×2 and ×4 light field spatial super resolution (LFSSR).
 
 UrbanLF-Real consists of 744 training, 80 validation and 80 test samples and the number of UrbanLF-Sys is 222, 28 and 30 respectively. 
 
-**The metrics (PSNR, SSIM) are calculated by averaging over all sub-aperture images.  The spatial resolution of the prediction for real images should be 622×432 for ×2 task and 620×432 for ×4 task. **
+**The metrics (PSNR, SSIM) are calculated by averaging over all sub-aperture images.**
+
+**The spatial resolution of the prediction for real images should be 622×432 for ×2 task and 620×432 for ×4 task. **
 
 #### Data Link
 
-Data is publicly available in Baiduyun (code: xjur) and Google.
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and Google.
+
+
 
 
 
@@ -82,7 +88,7 @@ Only UrbanLF-Sys is used for depth estimation with disparity range [-0.47,1.55] 
 
 #### Data Link
 
-Data is publicly available in Baiduyun (code: xjur) and Google.
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6y8o6F0Ow) (key: f54t) and Google.
 
 
 
