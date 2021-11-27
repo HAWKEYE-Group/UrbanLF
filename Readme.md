@@ -13,7 +13,9 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 
 ![1637998845990](images/fig1.png)
 
-The effective value of depth does not exceed 100 meters and the depth value of sky that can not be measured is set to 200.
+The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200.
+
+<br/>
 
 ## Benchmark
 
@@ -44,17 +46,22 @@ There are 14 classes for evaluation and their definitions are shown in the table
 
 #### Dataset Splitting
 
-UrbanLF-Real consists of 580 training, 80 validation and 164 test samples and the number of UrbanLF-Sys is 172, 28 and 50 respectively. They can be used for RGB, video, light field semantic segmentation and UrbanLF-Sys can also be used for RGB-D semantic segmentation. Note 
-
-**The metrics (mIoU, mAcc, Acc) are calculated only in full resolution of central view image.**
+| Dataset      | Application                                          | Train | Val  | Test |
+| ------------ | ---------------------------------------------------- | ----- | ---- | ---- |
+| UrbanLF-Real | RGB, video, light field semantic segmentation        | 580   | 80   | 164  |
+| UrbanLF-Syn  | RGB, video, RGB-D, light field semantic segmentation | 172   | 28   | 50   |
 
 #### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7IHu98PfQ) (key: 6ew2) and Google.
 
+#### Note
 
+**The metrics (mIoU, mAcc, Acc) are calculated only in full resolution of central view image.**
 
+<br/>
 
+<br/>
 
 ### Super Resolution
 
@@ -64,33 +71,46 @@ Our benchmark provides ×2 and ×4 light field spatial super resolution (LFSSR).
 
 #### Dataset Splitting
 
-UrbanLF-Real consists of 744 training, 80 validation and 80 test samples and the number of UrbanLF-Sys is 222, 28 and 30 respectively. 
-
-**The metrics (PSNR, SSIM) are calculated by averaging over all sub-aperture images.**
-
-**The spatial resolution of the prediction for real images should be 622×432 for ×2 task and 620×432 for ×4 task. **
+| Dataset      | Train | Val  | Test |
+| ------------ | ----- | ---- | ---- |
+| UrbanLF-Real | 744   | 80   | 80   |
+| UrbanLF-Syn  | 222   | 28   | 30   |
 
 #### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and Google.
 
+#### Note
 
+**The metrics (PSNR, SSIM) are calculated by averaging over all sub-aperture images.**
 
+**The spatial resolution of the prediction for real images should be 622×432 for ×2 task and 620×432 for ×4 task.**
 
+<br/>
+
+<br/>
 
 ### Depth Estimation
 
 #### Dataset Splitting
 
-Only UrbanLF-Sys is used for depth estimation with disparity range [-0.47,1.55] pixels. We exclude samples that contain the sky. UrbanLF-Sys consists of 170 training, 30 validation and 30 test samples. 
+| Dataset     | Train | Val  | Test |
+| ----------- | ----- | ---- | ---- |
+| UrbanLF-Syn | 170   | 30   | 30   |
 
-**The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
+
 
 #### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6y8o6F0Ow) (key: f54t) and Google.
 
+#### Note
 
+**The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
+
+<br/>
+
+<br/>
 
 ## Citation
 
@@ -100,6 +120,6 @@ If you find our work useful in your research, please consider citing:
 
 ```
 
-
+<br/>
 
 ## Statement
