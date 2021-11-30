@@ -11,6 +11,8 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 | UrbanLF-Real | Lytro Illum | 9×9              | 623×432            | sub-aperture images, label annotations of central view.      |
 | UrbanLF-Syn  | Blender     | 9×9              | 640×480            | sub-aperture images, label annotations of central view, depth and disparity information of central view. |
 
+![1638248153814](images/fig2.png)
+
 ![1637998845990](images/fig1.png)
 
 The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200.
@@ -71,6 +73,8 @@ Our benchmark provides ×2 and ×4 light field spatial super resolution (LFSSR).
 
 #### Dataset Splitting
 
+Considering that sharing the same test data with other benchmarks will expose the ground truth, we extra collect 80 real and 30 synthetic samples as two new test sets. 
+
 | Dataset      | Train | Val  | Test |
 | ------------ | ----- | ---- | ---- |
 | UrbanLF-Real | 744   | 80   | 80   |
@@ -92,13 +96,15 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXn
 
 ### Depth Estimation
 
+Only UrbanLF-Syn has ground truth disparity with range [−0.47,1.55] pixels between adjacent views.
+
 #### Dataset Splitting
+
+We create a new test set to avoid the disparity data leakage owing to data sharing among benchmarks and provide maximum and minimum disparity value.
 
 | Dataset     | Train | Val  | Test |
 | ----------- | ----- | ---- | ---- |
 | UrbanLF-Syn | 170   | 30   | 30   |
-
-
 
 #### Data Link
 
@@ -123,3 +129,5 @@ If you find our work useful in your research, please consider citing:
 <br/>
 
 ## Statement
+
+Most people and owners of the vehicles captured in the dataset have signed a license to allow the images to be used for scientific research. If the work violates your right to privacy, please send an email to congrx@buaa.edu.cn .
