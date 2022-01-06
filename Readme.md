@@ -11,9 +11,9 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 | UrbanLF-Real | Lytro Illum | 9×9              | 623×432            | sub-aperture images, label annotations of central view.      |
 | UrbanLF-Syn  | Blender     | 9×9              | 640×480            | sub-aperture images, label annotations of central view, depth and disparity information of central view. |
 
-![1638248153814](images/fig2.png)
+![1641459891430](images/fig1.png)
 
-![1637998845990](images/fig1.png)
+![1641459914252](images/fig2.png)
 
 The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200.
 
@@ -31,20 +31,20 @@ There are 14 classes for evaluation and their definitions are shown in the table
 
 | Name         | Label | RGB           | Definition                                                   |
 | ------------ | ----- | ------------- | ------------------------------------------------------------ |
-| bike         | 1     | [168,198,168] | <font size = 2>Bicycles, motorcycles, tricycles, and other transport without windows.</font> |
-| building     | 2     | [198,0,0]     | <font size = 2>Skyscrapers, houses, bus stops, tents and other buildings, including billboards, glass, scaffolding, poles, and other objects attached to them with no more than 20% in pixels.</font> |
-| fence        | 3     | [202,154,198] | <font size = 2>Fence with holes and plates or boards used for isolation, including objects can be seen through the holes of fence in real scene data.   </font> |
-| others       | 4     | [0,0,0]       | <font size = 2>All objects that do not belong to the above classes, such as soil, sand, grass, stone, trash can, chair, thing with large diameters attached to pole.</font> |
-| person       | 5     | [100,198,198] | <font size = 2>People who walk upright or stand still, including objects that are carried by people but not in contact with the ground. This class also include someone pushing a bike or standing next to it with both legs on the same side.</font> |
+| bike         | 1     | [168,198,168] | <font size = 2>Bicycle, motorcycle, tricycle, and other transport without windows.</font> |
+| building     | 2     | [198,0,0]     | <font size = 2>Skyscraper, house, bus stop, tent and other buildings, including billboard, glass, scaffolding, pole, and other objects attached to them with no more than 20% in pixels.</font> |
+| fence        | 3     | [202,154,198] | <font size = 2>Fence with holes and plate or board used for isolation, including objects can be seen through the holes of fence in real-world scene.   </font> |
+| others       | 4     | [0,0,0]       | <font size = 2>All objects that do not belong to the other 13 classes, such as soil, sand, grass, stone, trash can, chair, thing with large diameters attached to pole.</font> |
+| person       | 5     | [100,198,198] | <font size = 2>People who walk upright or stand still, including objects carried by people but not in contact with the ground. This class also includes someone pushing a bike or standing next to it with both legs on the same side.</font> |
 | pole         | 6     | [198,100,0]   | <font size = 2>Vertically oriented pole with horizontal part and brackets on it, such as sign pole and traffic light pole, including objects attached to the pole that do not belong to the traffic sign and the diameter at most twice of the pole in pixels.</font> |
-| road         | 7     | [52,42,198]   | <font size = 2>The ground which is designed for vehicles drive on, including small objects and markings on it.</font> |
+| road         | 7     | [52,42,198]   | <font size = 2>The ground on which vehicles drive on, including small objects and markings on it.</font> |
 | sidewalk     | 8     | [154,52,192]  | <font size = 2>The ground which is designed for pedestrians, including the part with a height difference from the boundary of the road. Vehicles are not allowed to drive on it.</font> |
-| traffic sign | 9     | [198,0,168]   | <font size = 2>Signs that provide traffic information for pedestrians and drivers, such as traffic signs, parking signs, direction signs, and traffic lights without their poles.</font> |
-| vegetation   | 10    | [0,198,0]     | <font size = 2>Tree and shrub with a certain height from the ground, including objects can be seen through the thin gaps between leaves and trunk in real scene data.</font> |
-| vehicle      | 11    | [198,186,90]  | <font size = 2>Cars, buses, trucks and other common large vehicles consist of 4 or more wheels and include all objects visible through the window.</font> |
+| traffic sign | 9     | [198,0,168]   | <font size = 2>Signs that provide traffic information for pedestrians and drivers, such as traffic sign, parking sign, direction sign, and traffic light without pole.</font> |
+| vegetation   | 10    | [0,198,0]     | <font size = 2>Tree and shrub with a certain height from the ground, including objects can be seen through the thin gaps between leaves and trunk in real-world scene.</font> |
+| vehicle      | 11    | [198,186,90]  | <font size = 2>Car, bus, truck and other common large vehicles consist of 4 or more wheels and include all objects visible through the window.</font> |
 | bridge       | 12    | [108,107,161] | <font size = 2>Bridge with a certain height from the ground.</font> |
-| rider        | 13    | [156,200,26]  | <font size = 2>People who drive bikes, including objects that are carried by people but not in contact with the ground.</font> |
-| sky          | 14    | [158,179,202] | <font size = 2>Open sky includes thin electrical wires in front of it.</font> |
+| rider        | 13    | [156,200,26]  | <font size = 2>People who ride a bike, including objects carried by people but not in contact with the ground.</font> |
+| sky          | 14    | [158,179,202] | <font size = 2>Open sky includes fog or thin electrical wires in front of it.</font> |
 
 #### Dataset Splitting
 
