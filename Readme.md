@@ -15,7 +15,7 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 
 ![1641459914252](images/fig2.png)
 
-The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200.
+The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200. 
 
 <br/>
 
