@@ -1,6 +1,6 @@
 # UrbanLF
 
-This is the official repository of the UrbanLF dataset. For technical details, please refer to: UrbanLF: A Comprehensive Light Field Dataset For Semantic Segmentation of Urban Scene.
+This is the official repository of the UrbanLF dataset. 
 
 ## Dataset
 
@@ -118,9 +118,9 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 <br/>
 
-## Citation
 
-This work is submitted to IEEE Transactions on Computational Imaging(TCI) 2021.
+
+
 
 <br/>
 
