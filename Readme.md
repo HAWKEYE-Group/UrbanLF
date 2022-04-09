@@ -9,7 +9,7 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 | Type         | Device      | Angle Resolution | Spatial Resolution | Element                                                      |
 | ------------ | ----------- | ---------------- | ------------------ | ------------------------------------------------------------ |
 | UrbanLF-Real | Lytro Illum | 9×9              | 623×432            | sub-aperture images, label annotations of central view.      |
-| UrbanLF-Syn  | Blender     | 9×9              | 640×480            | sub-aperture images, label annotations of central view, depth and disparity information of central view. |
+| UrbanLF-Syn  | Blender     | 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
 
 ![1641459891430](image/fig1.png)
 
