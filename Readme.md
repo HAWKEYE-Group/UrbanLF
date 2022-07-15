@@ -1,6 +1,6 @@
 # UrbanLF
 
-This is the official repository of the UrbanLF dataset. For technical details, please refer to: [UrbanLF: A New Light Field Dataset For Semantic Segmentation of Urban Scene.](<https://doi.org/10.1109/TCSVT.2022.3187664>)
+This is the official repository of the UrbanLF dataset. For technical details, please refer to: [UrbanLF: A New Light Field Dataset For Semantic Segmentation of Urban Scene. (IEEE TCSVT 2022)](<https://doi.org/10.1109/TCSVT.2022.3187664>)
 
 ## Dataset
 
