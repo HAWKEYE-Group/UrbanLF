@@ -123,13 +123,15 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 If you find this work is helpful to you, please cite the following paper:
 
 ```
-@article{sheng2022UrbanLF,
-  title={UrbanLF: A Comprehensive Light Field Dataset for Semantic Segmentation of Urban Scenes},
+@ARTICLE{9810920,
   author={Sheng, Hao and Cong, Ruixuan and Yang, Da and Chen, Rongshan and Wang, Sizhe and Cui, Zhenglong},
-  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={UrbanLF: A Comprehensive Light Field Dataset for Semantic Segmentation of Urban Scenes}, 
   year={2022},
-  publisher={IEEE}
-}
+  volume={32},
+  number={11},
+  pages={7880-7893},
+  doi={10.1109/TCSVT.2022.3187664}} 
 ```
 
 <br/>
