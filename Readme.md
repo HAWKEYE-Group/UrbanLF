@@ -123,7 +123,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 If you find this work is helpful to you, please cite the following paper:
 
 ```
-@ARTICLE{9810920,
+@ARTICLE{sheng2022urbanlf,
   author={Sheng, Hao and Cong, Ruixuan and Yang, Da and Chen, Rongshan and Wang, Sizhe and Cui, Zhenglong},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
   title={UrbanLF: A Comprehensive Light Field Dataset for Semantic Segmentation of Urban Scenes}, 
