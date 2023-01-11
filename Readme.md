@@ -21,7 +21,9 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 ## Benchmark
 
-Our benchmark will be available online soon.
+Our benchmark will be held with **the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023**. It will be available on line soon.
+
+
 
 ### Semantic Segmentation
 
@@ -98,6 +100,8 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXn
 
 Only UrbanLF-Syn has ground truth disparity with range [−0.47,1.55] pixels between adjacent views.
 
+For UrbanLF-Syn-big-dis, it has ground truth disparity with range [−7.09,7.05] pixels between adjacent views.
+
 #### Dataset Splitting
 
 We create a new test set to avoid the disparity data leakage owing to data sharing among benchmarks and provide maximum and minimum disparity value.
@@ -117,6 +121,16 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 <br/>
 
 <br/>
+
+## News & Updates
+
+- Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
+
+
+
+
+
+
 
 ## Citation
 
