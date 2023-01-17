@@ -21,7 +21,7 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 ## Benchmark
 
-Our benchmark will be held with **the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023**. It will be available on line soon.
+Our benchmark will be held with **the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023**. It is available [here](http://www.lfchallenge.com/main/).
 
 
 
@@ -124,6 +124,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 ## News & Updates
 
+- Jan 17, 2023: Benchmark online available.
 - Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
 
 
