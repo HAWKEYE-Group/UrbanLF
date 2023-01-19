@@ -4,7 +4,7 @@ This is the official repository of the UrbanLF dataset. For technical details, p
 
 ## Dataset
 
-UrbanLF is a high-quality and challenging urban scene light field dataset, containing real samples as well as synthetic samples.  The details are shown in table.
+**UrbanLF** is a high-quality and challenging urban scene light field dataset, containing real samples as well as synthetic samples.  The details are shown in table.
 
 | Type         | Device      | Angle Resolution | Spatial Resolution | Element                                                      |
 | ------------ | ----------- | ---------------- | ------------------ | ------------------------------------------------------------ |
@@ -16,8 +16,13 @@ UrbanLF is a high-quality and challenging urban scene light field dataset, conta
 ![1641459914252](image/fig2.png)
 
 The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200. 
-
 <br/>
+
+**Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. It has gound truth disparity with range [-0.41,0.48] pixels between adjacent views. The opacity range of non-Lambert objects is [10%, 80%], and the reflectivity range is [86%, 98%].
+| Type         | Device      | Angle Resolution | Spatial Resolution | Element                                                      |
+| ------------ | ----------- | ---------------- | ------------------ | ------------------------------------------------------------ |
+| Non-Lambertian-LF | Blender | 9×9              | 926×926            | sub-aperture images, disparity information of central view.      |
+
 
 ## Benchmark
 
