@@ -16,6 +16,9 @@ This is the official repository of the UrbanLF dataset. For technical details, p
 ![1641459914252](image/fig2.png)
 
 The effective depth does not exceed 100 meters and the value of sky that can not be measured is set to 200. 
+
+<br/>
+
 <br/>
 
 **Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. 
@@ -127,8 +130,23 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 <br/>
 
+### Non-Lambertian Depth Estimation
+Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
+Scene David has different transparency. 
+Scene Apple has different reflectance. 
+Scene Teddy contains Lambertian and non-Lambertian objects at the same time.
+
+#### Data Link
+
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6y8o6F0Ow) (key: f54t) and [Google](https://drive.google.com/file/d/1obKkSmINfBHFaQK8MVtf-dKfbQnp31Sx/view?usp=share_link).
+
+#### Note
+
+**The metrics (MSE, BP) are calculated only on central view image.**
+
 ## News & Updates
 
+- Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
 - Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
 
