@@ -134,14 +134,9 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
 <br/>
 
-Scene David contains non-Lambertian objects with different transparency. 
-
-<br/>
-
-Scene Apple contains non-Lambertian objects with different reflectance. 
-<br/>
-
-Scene Teddy contains Lambertian and non-Lambertian objects at the same time.
+-Scene David contains non-Lambertian objects with different transparency. 
+-Scene Apple contains non-Lambertian objects with different reflectance. 
+-Scene Teddy contains Lambertian and non-Lambertian objects at the same time.
 
 #### Data Link
 
