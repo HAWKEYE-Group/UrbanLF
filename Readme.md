@@ -140,7 +140,7 @@ Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,
 
 #### Data Link
 
-Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6y8o6F0Ow) (key: f54t) and [Google](https://drive.google.com/file/d/1obKkSmINfBHFaQK8MVtf-dKfbQnp31Sx/view?usp=share_link).
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrAtTw7r_Ig?pwd=ms87) and [Google](https://drive.google.com/file/d/1obKkSmINfBHFaQK8MVtf-dKfbQnp31Sx/view?usp=share_link).
 
 #### Note
 
