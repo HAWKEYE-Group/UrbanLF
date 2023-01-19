@@ -132,8 +132,11 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 ### Non-Lambertian Depth Estimation
 Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
+<br/>
 Scene David has different transparency. 
+<br/>
 Scene Apple has different reflectance. 
+<br/>
 Scene Teddy contains Lambertian and non-Lambertian objects at the same time.
 
 #### Data Link
@@ -143,6 +146,10 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 #### Note
 
 **The metrics (MSE, BP) are calculated only on central view image.**
+
+<br/>
+
+<br/>
 
 ## News & Updates
 
@@ -154,7 +161,9 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 
 
+<br/>
 
+<br/>
 
 ## Citation
 
