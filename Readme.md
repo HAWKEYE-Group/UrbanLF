@@ -134,9 +134,9 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
 <br/>
 
--Scene David contains non-Lambertian objects with different transparency. 
--Scene Apple contains non-Lambertian objects with different reflectance. 
--Scene Teddy contains Lambertian and non-Lambertian objects at the same time.
+- "Teddy" is a scene of a teddy bear half obscured by glass, which is designed to test the continuity of the background's depth estimation result. 
+- "David" is a set of images with the same scene, where a head of the statue David is obscured by glass of varying transparency. The transparency of the glass itself is gradually decreasing from 90% to 30% by 20% as a step, and the transparency is floating between plus and minus 10% due to random noise and patterns on the glass. 
+- "Apple" is a set of images with the same scene, where an apple sits on a smooth marble table. The marble tabletop with different reflectivity reflects the reflection of the apple. This set of data is used to test the robustness to different reflectances.
 
 #### Data Link
 
