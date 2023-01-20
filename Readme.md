@@ -1,10 +1,8 @@
-# UrbanLF
+# Dataset
 
-This is the official repository of the UrbanLF dataset. For technical details, please refer to: [UrbanLF: A New Light Field Dataset For Semantic Segmentation of Urban Scene. (IEEE TCSVT 2022)](<https://doi.org/10.1109/TCSVT.2022.3187664>)
+## UrbanLF
 
-## Dataset
-
-**UrbanLF** is a high-quality and challenging urban scene light field dataset, containing real samples as well as synthetic samples.  The details are shown in table.
+**UrbanLF** is a high-quality and challenging urban scene light field dataset, containing real samples as well as synthetic samples. For technical details, please refer to: [UrbanLF: A New Light Field Dataset For Semantic Segmentation of Urban Scene. (IEEE TCSVT 2022)](<https://doi.org/10.1109/TCSVT.2022.3187664>)
 
 | Type         | Device      | Angle Resolution | Spatial Resolution | Element                                                      |
 | ------------ | ----------- | ---------------- | ------------------ | ------------------------------------------------------------ |
@@ -19,7 +17,7 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 <br/>
 
-<br/>
+## Non-Lambertian-LF
 
 **Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. 
 | Type              | Device  | Angle Resolution | Spatial Resolution | Element                                                      |
@@ -27,15 +25,15 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 | Non-Lambertian-LF | Blender | 9×9              | 926×926            | sub-aperture images, disparity information of central view.  |
 
 
-## Benchmark
+# Benchmark
 
 Our benchmark will be held with **the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023**. It is available [here](http://www.lfchallenge.com/main/).
 
 
 
-### Semantic Segmentation
+## Semantic Segmentation
 
-#### Class Selection
+### Class Selection
 
 There are 14 classes for evaluation and their definitions are shown in the table. 
 
@@ -56,18 +54,18 @@ There are 14 classes for evaluation and their definitions are shown in the table
 | rider        | 13    | [156,200,26]  | <font size = 2>People who ride a bike, including objects carried by people but not in contact with the ground.</font> |
 | sky          | 14    | [158,179,202] | <font size = 2>Open sky includes fog or thin electrical wires in front of it.</font> |
 
-#### Dataset Splitting
+### Dataset Splitting
 
 | Dataset      | Application                                          | Train | Val  | Test |
 | ------------ | ---------------------------------------------------- | ----- | ---- | ---- |
 | UrbanLF-Real | RGB, video, light field semantic segmentation        | 580   | 80   | 164  |
 | UrbanLF-Syn  | RGB, video, RGB-D, light field semantic segmentation | 172   | 28   | 50   |
 
-#### Data Link
+### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7IHu98PfQ) (key: 6ew2) and [Google](https://drive.google.com/drive/folders/1ke8kLYmEE1Lt7vVjw-y7_vWoCh0wkpEM?usp=sharing).
 
-#### Note
+### Note
 
 **The metrics (mIoU, mAcc, Acc) are calculated only in full resolution of central view image.**
 
@@ -75,13 +73,13 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7
 
 <br/>
 
-### Super Resolution
+## Super Resolution
 
-#### Data generation
+### Data generation
 
 Our benchmark provides ×2 and ×4 light field spatial super resolution (LFSSR). The bicubic interpolation with a factor of 2 and 4 is applied to generate low resolution images of different scales. Due to the limitation of resolution, the real images are preprocessed before generating the test data. For ×2 task, we crop 1 pixel width on the right.  For ×4 task, we crop 2 pixel width on the right and 1 pixel width on the left. 
 
-#### Dataset Splitting
+### Dataset Splitting
 
 Considering that sharing the same test data with other benchmarks will expose the ground truth, we extra collect 80 real and 30 synthetic samples as two new test sets. 
 
@@ -90,11 +88,11 @@ Considering that sharing the same test data with other benchmarks will expose th
 | UrbanLF-Real | 744   | 80   | 80   |
 | UrbanLF-Syn  | 222   | 28   | 30   |
 
-#### Data Link
+### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and [Google](https://drive.google.com/drive/folders/17NJ14raPXrECAkGHUmmv44wVo_aIEQ2x?usp=sharing).
 
-#### Note
+### Note
 
 **The metrics (PSNR, SSIM) are calculated by averaging over all sub-aperture images.**
 
@@ -104,13 +102,13 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXn
 
 <br/>
 
-### Depth Estimation
+## Depth Estimation
 
 Only UrbanLF-Syn has ground truth disparity with range [−0.47,1.55] pixels between adjacent views.
 
 For UrbanLF-Syn-big-dis, it has ground truth disparity with range [−7.09,7.05] pixels between adjacent views.
 
-#### Dataset Splitting
+### Dataset Splitting
 
 We create a new test set to avoid the disparity data leakage owing to data sharing among benchmarks and provide maximum and minimum disparity value.
 
@@ -118,11 +116,11 @@ We create a new test set to avoid the disparity data leakage owing to data shari
 | ----------- | ----- | ---- | ---- |
 | UrbanLF-Syn | 170   | 30   | 30   |
 
-#### Data Link
+### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6y8o6F0Ow) (key: f54t) and [Google](https://drive.google.com/drive/folders/1Sh6-4JCI0PDAZNqpK1T9NB9B6OeITCc0?usp=sharing).
 
-#### Note
+### Note
 
 **The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
 
@@ -130,7 +128,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 <br/>
 
-### Non-Lambertian Depth Estimation
+## Non-Lambertian Depth Estimation
 Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
 <br/>
 
@@ -138,11 +136,11 @@ Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,
 - "David" is a set of images with the same scene, where a head of the statue David is obscured by glass of varying transparency. The transparency of the glass itself is gradually decreasing from 90% to 30% by 20% as a step, and the transparency is floating between plus and minus 10% due to random noise and patterns on the glass. 
 - "Apple" is a set of images with the same scene, where an apple sits on a smooth marble table. The marble tabletop with different reflectivity reflects the reflection of the apple. This set of data is used to test the robustness to different reflectances.
 
-#### Data Link
+### Data Link
 
 Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrAtTw7r_Ig?pwd=ms87) and [Google](https://drive.google.com/file/d/1obKkSmINfBHFaQK8MVtf-dKfbQnp31Sx/view?usp=share_link).
 
-#### Note
+### Note
 
 **The metrics (MSE, BP) are calculated only on central view image.**
 
@@ -150,7 +148,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 
 <br/>
 
-## News & Updates
+# News & Updates
 
 - Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
@@ -164,7 +162,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 
 <br/>
 
-## Citation
+# Citation
 
 If you find this work is helpful to you, please cite the following paper:
 
@@ -182,6 +180,6 @@ If you find this work is helpful to you, please cite the following paper:
 
 <br/>
 
-## Statement
+# Statement
 
 Most people and owners of the vehicles captured in the dataset have signed a license to allow the images to be used for scientific research. If the work violates your right to privacy, please send an email to congrx@buaa.edu.cn .
