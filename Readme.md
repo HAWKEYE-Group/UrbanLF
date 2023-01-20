@@ -24,6 +24,7 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 | ------------------| --------| ---------------- | ------------------ | ------------------------------------------------------------ |
 | Non-Lambertian-LF | Blender | 9×9              | 926×926            | sub-aperture images, disparity information of central view.  |
 
+<br/>
 
 # Benchmark
 
