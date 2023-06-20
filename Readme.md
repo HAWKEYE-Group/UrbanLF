@@ -28,7 +28,7 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 # Benchmark
 
-Our benchmark will be held with **the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023**. It is available [here](http://www.lfchallenge.com/main/).
+Our benchmark will be held with **[the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023](http://www.lfchallenge.com/LFNAT@CVPR2023/home/)**. It is available [here](http://www.lfchallenge.com/main/).
 
 
 
