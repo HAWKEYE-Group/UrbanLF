@@ -125,9 +125,19 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 **The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
 
-### Benchmark on LFNAT 2023 CVPR Workshop
+### Benchmark Result of LFNAT 2023 CVPR Workshop
 ![1641459891431](image/fig3.png)
 
+### Citation
+```
+@inproceedings{sheng2023lfnat,
+  title={Lfnat 2023 challenge on light field depth estimation: Methods and results},
+  author={Sheng, Hao and Liu, Yebin and Yu, Jingyi and Wu, Gaochang and Xiong, Wei and Cong, Ruixuan and Chen, Rongshan and Guo, Longzhao and Xie, Yanlin and Zhang, Shuo and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3472--3484},
+  year={2023}
+}
+```
 
 <br/>
 
