@@ -126,6 +126,8 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 **The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
 
 ### Benchmark Result of LFNAT 2023 CVPR Workshop
+In conjunction with the workshop on Light Fields for Computer Vision LFNAT, we host a light field depth estimation challenge based upon UrbanLF-Syn. For result analysis details, please refer to: [LFNAT 2023 Challenge on Light Field Depth Estimation: Methods and Results](<https://openaccess.thecvf.com/content/CVPR2023W/LFNAT/html/Sheng_LFNAT_2023_Challenge_on_Light_Field_Depth_Estimation_Methods_and_CVPRW_2023_paper.html>)
+
 ![1641459891431](image/fig3.png)
 
 ### Citation
