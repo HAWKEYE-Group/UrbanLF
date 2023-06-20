@@ -150,7 +150,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 <br/>
 
 # News & Updates
-
+- Jun 20, 2023: Update Light Field Depth Estimation Challenge Result of 2023 LFNAT CVPR Workshop Based on UrbanLF-Syn-Small.
 - Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
 - Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
