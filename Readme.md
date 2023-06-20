@@ -125,6 +125,10 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1PpYolOSlxQt-J6
 
 **The metrics (MSE, BP) are calculated only on central view image with cropping 15 pixels at each border.**
 
+### Benchmark on LFNAT 2023 CVPR Workshop
+![1641459891431](image/fig3.png)
+
+
 <br/>
 
 <br/>
@@ -150,7 +154,7 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 <br/>
 
 # News & Updates
-- Jun 20, 2023: Update Light Field Depth Estimation Challenge Result of 2023 LFNAT CVPR Workshop Based on UrbanLF-Syn.
+- Jun 20, 2023: Update Light Field Depth Estimation Challenge Result of 2023 LFNAT CVPR Workshop Based on UrbanLF-Syn dataset.
 - Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
 - Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
@@ -176,7 +180,7 @@ If you find this work is helpful to you, please cite the following paper:
   volume={32},
   number={11},
   pages={7880-7893},
-  doi={10.1109/TCSVT.2022.3187664}} 
+  doi={10.1109/TCSVT.2022.3187664}}
 ```
 
 <br/>
