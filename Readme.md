@@ -132,12 +132,13 @@ In conjunction with the workshop on Light Fields for Computer Vision LFNAT, we h
 
 ### Citation
 ```
-@inproceedings{sheng2023lfnat,
-  title={Lfnat 2023 challenge on light field depth estimation: Methods and results},
-  author={Sheng, Hao and Liu, Yebin and Yu, Jingyi and Wu, Gaochang and Xiong, Wei and Cong, Ruixuan and Chen, Rongshan and Guo, Longzhao and Xie, Yanlin and Zhang, Shuo and others},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={3472--3484},
-  year={2023}
+@InProceedings{Sheng2023lfnat,
+    author    = {Sheng, Hao and Liu, Yebin and Yu, Jingyi and Wu, Gaochang and Xiong, Wei and Cong, Ruixuan and Chen, Rongshan and others},
+    title     = {LFNAT 2023 Challenge on Light Field Depth Estimation: Methods and Results},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2023},
+    pages     = {3472-3484}
 }
 ```
 
