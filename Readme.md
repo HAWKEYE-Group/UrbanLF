@@ -28,7 +28,7 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 # Benchmark
 
-Our benchmark will be held with **[the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023](http://www.lfchallenge.com/LFNAT@CVPR2023/home/)**. It is available [here](http://www.lfchallenge.com/main/).
+Our benchmark has been held with **[the 3rd Workshop on Light Fields for Computer Vision LFNAT: New Applications and Trends in Light Fields in conjunction with CVPR 2023](http://www.lfchallenge.com/LFNAT@CVPR2023/home/)**.
 
 
 
@@ -167,10 +167,11 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 <br/>
 
 # News & Updates
+- Nov 1, 2023: Construct a new multi-scale baseline light field dataset on the basis of UrbanLF-Syn that contains large disparity as well as small disparity samples. It will be publicly available in the near future.
 - Jun 20, 2023: Update Light Field Depth Estimation Challenge Result of 2023 LFNAT CVPR Workshop Based on UrbanLF-Syn dataset.
 - Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
-- Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.
+- ~~Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.~~
 
 
 
