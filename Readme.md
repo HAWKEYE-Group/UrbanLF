@@ -20,10 +20,10 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 ## UrbanLF-Multiscale-Baseline-Dataset
 **UrbanLF-Multiscale-Baseline-Dataset** is a high-quality and challenging urban scene light field dataset, **containing sparsely sampled as well as densely sampled synthetic light field samples that share the same scenarios**. It is created by Blender on the basis of UrbanLF-Syn. For technical details, please refer to: [End-to-End Semantic Segmentation Utilizing Multi-scale Baseline Light Field. (IEEE TCSVT 2024)](<https://ieeexplore.ieee.org/document/10440124>)
 
-| Type             | Disparity Range| Angle Resolution | Spatial Resolution | Element                                                      |
-| ---------------- | -----------| ---------------- | ------------------ | ------------------------------------------------------------ |
-| UrbanLF-Syn-Big  |[-7.39,7.07]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
-| UrbanLF-Syn-Small|[-0.47,1.58]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
+| Type             | Device | Disparity Range| Angle Resolution | Spatial Resolution | Element                                                      |
+| ---------------- | -------|-----------| ---------------- | ------------------ | ------------------------------------------------------------ |
+| UrbanLF-Syn-Big  |Blender |[-7.39,7.07]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
+| UrbanLF-Syn-Small|Blender |[-0.47,1.58]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
 
 Among the 400 scenarios corresponding to 400 samples, 250 of them are from UrbanLF-Syn, and the remaining 150 scenarios are newly built.
 
@@ -69,14 +69,18 @@ There are 14 classes for evaluation and their definitions are shown in the table
 
 ### Dataset Splitting
 
-| Dataset      | Application                                          | Train | Val  | Test |
-| ------------ | ---------------------------------------------------- | ----- | ---- | ---- |
-| UrbanLF-Real | RGB, video, light field semantic segmentation        | 580   | 80   | 164  |
-| UrbanLF-Syn  | RGB, video, RGB-D, light field semantic segmentation | 172   | 28   | 50   |
+| Dataset            | Application                                          | Train | Val  | Test |
+| ------------       | ---------------------------------------------------- | ----- | ---- | ---- |
+| UrbanLF-Real       | RGB, video, light field semantic segmentation        | 580   | 80   | 164  |
+| UrbanLF-Syn        | RGB, video, RGB-D, light field semantic segmentation | 172   | 28   | 50   |
+| UrbanLF-Syn-Big    | RGB, video, RGB-D, light field semantic segmentation | 280   | 40   | 80   |
+| UrbanLF-Syn-Small  | RGB, video, RGB-D, light field semantic segmentation | 280   | 40   | 80   |
 
 ### Data Link
 
-Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7IHu98PfQ) (key: 6ew2) and [Google](https://drive.google.com/drive/folders/1ke8kLYmEE1Lt7vVjw-y7_vWoCh0wkpEM?usp=sharing).
+UrbanLF-Real and UrbanLF-Syn are publicly available in [Baiduyun](https://pan.baidu.com/s/1r0ZVhQoYb3coL7IHu98PfQ) (key: 6ew2) and [Google](https://drive.google.com/drive/folders/1ke8kLYmEE1Lt7vVjw-y7_vWoCh0wkpEM?usp=sharing). <br/>
+UrbanLF-Syn-Big is publicly available in [Baiduyun](https://pan.baidu.com/s/1rqcS02kaO4i5gXCle-UAjw?pwd=ekw1) (key: ekw1) and [Google](https://drive.google.com/drive/folders/1qJTat8pyO5bHwhnqvq-zlmPw9-M0npWK?usp=sharing). <br/>
+UrbanLF-Syn-Small is publicly available in [Baiduyun](https://pan.baidu.com/s/1JH0gTwbfXM0Etv0DR5H91A?pwd=0cp1) (key: 0cp1) and [Google](https://drive.google.com/drive/folders/136uwBgbM5HeKnRKYvYpozaslumPa0jtz?usp=drive_link). <br/>
 
 ### Note
 
@@ -100,14 +104,12 @@ Considering that sharing the same test data with other benchmarks will expose th
 | -----------------  | ----- | ---- | ---- |
 | UrbanLF-Real       | 744   | 80   | 80   |
 | UrbanLF-Syn        | 222   | 28   | 30   |
-| UrbanLF-Syn-Big    | 280   | 40   | 80   |
-| UrbanLF-Syn-Small  | 280   | 40   | 80   |
+
 
 ### Data Link
 
-UrbanLF-Real/UrbanLF-Syn is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and [Google](https://drive.google.com/drive/folders/17NJ14raPXrECAkGHUmmv44wVo_aIEQ2x?usp=sharing).
-UrbanLF-Syn-Big is publicly available in [Baiduyun](https://pan.baidu.com/s/1rqcS02kaO4i5gXCle-UAjw?pwd=ekw1) (key: ekw1) and [Google](https://drive.google.com/drive/folders/1qJTat8pyO5bHwhnqvq-zlmPw9-M0npWK?usp=sharing).
-UrbanLF-Syn-Small is publicly available in [Baiduyun](https://pan.baidu.com/s/1JH0gTwbfXM0Etv0DR5H91A?pwd=0cp1) (key: 0cp1) and [Google](https://drive.google.com/drive/folders/136uwBgbM5HeKnRKYvYpozaslumPa0jtz?usp=drive_link).
+Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and [Google](https://drive.google.com/drive/folders/17NJ14raPXrECAkGHUmmv44wVo_aIEQ2x?usp=sharing).
+
 
 
 ### Note
