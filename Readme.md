@@ -17,6 +17,18 @@ The effective depth does not exceed 100 meters and the value of sky that can not
 
 <br/>
 
+## UrbanLF-Multiscale-Baseline-Dataset
+**UrbanLF-Multiscale-Baseline-Dataset** is a high-quality and challenging urban scene light field dataset, **containing sparsely sampled as well as densely sampled synthetic light field samples that share the same scenarios**. It is created by Blender on the basis of UrbanLF-Syn. For technical details, please refer to: [End-to-End Semantic Segmentation Utilizing Multi-scale Baseline Light Field. (IEEE TCSVT 2024)](<https://ieeexplore.ieee.org/document/10440124>)
+
+| Type             | Disparity Range| Angle Resolution | Spatial Resolution | Element                                                      |
+| ---------------- | -----------| ---------------- | ------------------ | ------------------------------------------------------------ |
+| UrbanLF-Syn-Big  |[-7.39,7.07]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
+| UrbanLF-Syn-Small|[-0.47,1.58]| 9×9              | 640×480            | sub-aperture images, label annotations of all 81 views, depth and disparity information of all 81 views. |
+
+Among the 400 scenarios corresponding to 400 samples, 250 of them are from UrbanLF-Syn, and the remaining 150 scenarios are newly built.
+
+<br/>
+
 ## Non-Lambertian-LF
 
 **Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. 
@@ -84,14 +96,19 @@ Our benchmark provides ×2 and ×4 light field spatial super resolution (LFSSR).
 
 Considering that sharing the same test data with other benchmarks will expose the ground truth, we extra collect 80 real and 30 synthetic samples as two new test sets. 
 
-| Dataset      | Train | Val  | Test |
-| ------------ | ----- | ---- | ---- |
-| UrbanLF-Real | 744   | 80   | 80   |
-| UrbanLF-Syn  | 222   | 28   | 30   |
+| Dataset            | Train | Val  | Test |
+| -----------------  | ----- | ---- | ---- |
+| UrbanLF-Real       | 744   | 80   | 80   |
+| UrbanLF-Syn        | 222   | 28   | 30   |
+| UrbanLF-Syn-Big    | 280   | 40   | 80   |
+| UrbanLF-Syn-Small  | 280   | 40   | 80   |
 
 ### Data Link
 
-Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and [Google](https://drive.google.com/drive/folders/17NJ14raPXrECAkGHUmmv44wVo_aIEQ2x?usp=sharing).
+UrbanLF-Real/UrbanLF-Syn is publicly available in [Baiduyun](https://pan.baidu.com/s/1Inl81BwQNy2gXnE1Gi_lcw) (key: 7cwp) and [Google](https://drive.google.com/drive/folders/17NJ14raPXrECAkGHUmmv44wVo_aIEQ2x?usp=sharing).
+UrbanLF-Syn-Big is publicly available in [Baiduyun](https://pan.baidu.com/s/1rqcS02kaO4i5gXCle-UAjw?pwd=ekw1) (key: ekw1) and [Google](https://drive.google.com/drive/folders/1qJTat8pyO5bHwhnqvq-zlmPw9-M0npWK?usp=sharing).
+UrbanLF-Syn-Small is publicly available in [Baiduyun](https://pan.baidu.com/s/1JH0gTwbfXM0Etv0DR5H91A?pwd=0cp1) (key: 0cp1) and [Google](https://drive.google.com/drive/folders/136uwBgbM5HeKnRKYvYpozaslumPa0jtz?usp=drive_link).
+
 
 ### Note
 
@@ -167,13 +184,10 @@ Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrA
 <br/>
 
 # News & Updates
-- Nov 1, 2023: Construct a new multi-scale baseline light field dataset on the basis of UrbanLF-Syn that contains large disparity as well as small disparity samples. It will be publicly available in the near future.
+- Feb 27, 2024: Upload UrbanLF-Multiscale-Baseline-Dataset on the basis of UrbanLF-Syn that contains large disparity as well as small disparity samples.
 - Jun 20, 2023: Update Light Field Depth Estimation Challenge Result of 2023 LFNAT CVPR Workshop Based on UrbanLF-Syn dataset.
 - Jan 20, 2023: Non-Lambertian-LF dataset for non-Lambertian light field depth estimation is available.
 - Jan 17, 2023: Benchmark online available.
-- ~~Jan 11, 2023: Upload **UrbanLF-Syn-big-dis light field dataset** to Baiduyun and Google. UrbanLF-Syn-big-dis is a large disparity dataset that consists of sampled light fields with a maximum range [−7.09,7.05]. It shares the same scenes with UrbanLF-Syn.~~
-
-
 
 
 
@@ -195,6 +209,13 @@ If you find this work is helpful to you, please cite the following paper:
   number={11},
   pages={7880-7893},
   doi={10.1109/TCSVT.2022.3187664}}
+
+@ARTICLE{cong2024lfienetplus,
+  author={Cong, Ruixuan and Sheng, Hao and Yang, Dazhi and Yang, Da and Chen, Rongshan and Wang, Sizhe and Cui, Zhenglong},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={End-to-End Semantic Segmentation Utilizing Multi-scale Baseline Light Field}, 
+  year={2024},
+  doi={10.1109/TCSVT.2024.3367370}}
 ```
 
 <br/>
