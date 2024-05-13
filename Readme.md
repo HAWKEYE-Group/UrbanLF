@@ -31,7 +31,7 @@ Among the 400 scenarios corresponding to 400 samples, 250 of them are from Urban
 
 ## Non-Lambertian-LF
 
-**Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. 
+**Non-Lambertian-LF** is a synthetic light field depth estimation dataset focused on non-Lambertian objects. It is available at [here](<https://github.com/ZhenglongCui/Non-Lambertian-Light-Field/tree/main>).
 | Type              | Device  | Angle Resolution | Spatial Resolution | Element                                                      |
 | ------------------| --------| ---------------- | ------------------ | ------------------------------------------------------------ |
 | Non-Lambertian-LF | Blender | 9×9              | 926×926            | sub-aperture images, disparity information of central view.  |
@@ -165,25 +165,7 @@ In conjunction with the workshop on Light Fields for Computer Vision LFNAT, we h
 
 <br/>
 
-## Non-Lambertian Depth Estimation
-Non-Lambertian-LF contains three scenes with gound truth disparity range [-0.41,0.48] pixels between adjacent views, opacity range [10%, 80%] and reflectance range [86%,98%].
-<br/>
 
-- "Teddy" is a scene of a teddy bear half obscured by glass, which is designed to test the continuity of background's disparity result. 
-- "David" is a set of images with the same scene, where a head of the statue David is obscured by glass of varying transparency. The transparency of the glass itself is gradually decreasing from 90% to 30% by 20% as a step, and the transparency is floating between plus and minus 10% due to random noise and patterns on the glass. 
-- "Apple" is a set of images with the same scene, where an apple sits on a smooth marble table. The marble tabletop with different reflectivity reflects the reflection of the apple. This set of data is used to test the robustness to different reflectances.
-
-### Data Link
-
-Data is publicly available in [Baiduyun](https://pan.baidu.com/s/1rMLxu1vY8l8yrAtTw7r_Ig?pwd=ms87) and [Google](https://drive.google.com/file/d/1obKkSmINfBHFaQK8MVtf-dKfbQnp31Sx/view?usp=share_link).
-
-### Note
-
-**The metrics (MSE, BP) are calculated only on central view image.**
-
-<br/>
-
-<br/>
 
 # News & Updates
 - Feb 27, 2024: Upload UrbanLF-Multiscale-Baseline-Dataset on the basis of UrbanLF-Syn that contains large disparity as well as small disparity samples.
